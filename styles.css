@@ -1,14 +1,13 @@
-/* Reset and General Styles */
+/* General Reset and Styles */
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    direction: rtl; /* لجعل النصوص بالعربية */
-    text-align: right; /* لتنسيق النصوص للعربية */
+    direction: rtl;
+    text-align: right;
 }
 
-/* Header Styling */
 header {
     position: fixed;
     top: 0;
@@ -16,44 +15,51 @@ header {
     background-color: #4c00ff;
     color: white;
     z-index: 10;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* إضافة ظل */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px 0;
 }
 
 header .container {
     display: flex;
     align-items: center;
-    padding: 10px 0px;
+    justify-content: space-between;
+    padding: 0 10px;
 }
 
 header .logo img {
-    max-width: 50px;
+    max-width: 40px;
     height: auto;
-    margin-left: 10px; /* تبديل الهامش لليسار للعربية */
+}
+
+header .header-text {
+    text-align: center;
+    margin: 0 auto;
 }
 
 header .header-text h1 {
-    font-size: 1rem;
-    margin: 0;
+    font-size: 1.2rem;
+    margin: 5px 0;
 }
 
 header .header-text p {
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin: 0;
     color: #ddd;
 }
 
-/* Navigation Bar */
+/* Navigation Styling */
 nav ul {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     list-style: none;
-    margin: 0;
-    padding: 80px 0; /* تعديل المسافة لتناسب العربية */
-    background-color: #f4f4f4; /* خلفية خفيفة */
+    margin: 60px 0 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
 
 nav ul li {
-    margin: 0 10px;
+    margin: 5px;
 }
 
 nav ul li a {
@@ -66,169 +72,74 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: #4c00ff;
-    color: #fff;
+    color: white;
 }
 
 /* Sections */
 section {
-    margin-top: 120px; /* لإبعاد المحتوى عن الهيدر الثابت */
-    text-align: center;
-    width: 90%;
-    max-width: 800px;
-    margin: 120px auto 20px; /* للمسافة مع الهيدر */
+    margin: 80px auto 20px;
     padding: 20px;
     background: #f4f4f4;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Contact Section */
-.contact-links p {
-    margin: 10px 0;
-}
-
-.contact-links img.icon {
-    width: 16px; /* عرض الأيقونة */
-    height: 16px; /* ارتفاع الأيقونة */
-    margin-left: 5px; /* مسافة بين الأيقونة والنص */
-    vertical-align: middle; /* محاذاة الأيقونة مع النص */
-    border-radius: 50%; /* يجعل الأيقونة دائرية (اختياري) */
-}
-
-/* Footer Styling */
-footer {
-    background: #4c00ff;
-    color: white;
-    text-align: center;
-    padding: 1px;
-    font-size: 0.6rem;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-/* Reset and General Styles */
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    direction: rtl; /* لجعل النصوص بالعربية */
-    text-align: right; /* لتنسيق النصوص للعربية */
-}
-
-/* Header Styling */
-header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #4c00ff;
-    color: white;
-    z-index: 10;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* إضافة ظل */
-}
-
-header .container {
-    display: flex;
-    align-items: center;
-    padding: 10px 0px;
-}
-
-header .logo img {
-    max-width: 50px;
-    height: auto;
-    margin-left: 10px; /* تبديل الهامش لليسار للعربية */
-}
-
-header .header-text h1 {
-    font-size: 1rem;
-    margin: 0;
-}
-
-header .header-text p {
-    font-size: 1rem;
-    margin: 0;
-    color: #ddd;
-}
-
-/* Navigation Bar */
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    margin: 0;
-    padding: 80px 0; /* تعديل المسافة لتناسب العربية */
-    background-color: #f4f4f4; /* خلفية خفيفة */
-}
-
-nav ul li {
-    margin: 0 10px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #333;
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-nav ul li a:hover {
-    background-color: #4c00ff;
-    color: #fff;
-}
-
-/* Sections */
-section {
-    margin-top: 120px; /* لإبعاد المحتوى عن الهيدر الثابت */
-    text-align: center;
     width: 90%;
-    max-width: 800px;
-    margin: 120px auto 20px; /* للمسافة مع الهيدر */
-    padding: 20px;
-    background: #f4f4f4;
-    border-radius: 10px;
+    max-width: 1200px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-/* Image Styling */
-.slides img {
-    max-width: 40%; /* تقليل عرض الصورة */
+/* Responsive Images and Videos */
+.slides img, .video-item video {
+    max-width: 90%;
     height: auto;
-    border: 1px solid #ccc;
+    margin: 10px auto;
     border-radius: 5px;
-    margin: 10px auto;
 }
 
-/* Video Styling */
-.video-item video {
-    max-width: 70%; /* تقليل عرض الفيديو */
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 10px auto;
-}
-
-/* Contact Section */
-.contact-links p {
-    margin: 10px 0;
-}
-
-.contact-links img.icon {
-    width: 16px; /* عرض الأيقونة */
-    height: 16px; /* ارتفاع الأيقونة */
-    margin-left: 5px; /* مسافة بين الأيقونة والنص */
-    vertical-align: middle; /* محاذاة الأيقونة مع النص */
-    border-radius: 50%; /* يجعل الأيقونة دائرية (اختياري) */
-}
-
-/* Footer Styling */
+/* Footer */
 footer {
-    background: #4c00ff;
+    background-color: #4c00ff;
     color: white;
     text-align: center;
-    padding: 1px;
-    font-size: 0.6rem;
-    position: fixed;
+    padding: 10px;
+    font-size: 0.8rem;
+    position: relative;
     bottom: 0;
-    width: 100%;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    header .header-text h1 {
+        font-size: 1rem;
+    }
+
+    header .header-text p {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header .logo img {
+        max-width: 30px;
+    }
+
+    nav ul li a {
+        font-size: 0.8rem;
+        padding: 8px 12px;
+    }
+
+    section {
+        padding: 10px;
+    }
 }

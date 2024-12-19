@@ -162,12 +162,20 @@ footer {
 /* Mobile Screens */
 @media screen and (max-width: 768px) {
     /* Header */
+    header {
+        padding: 10px 0;
+    }
+
+    header .logo img {
+        max-width: 50px; /* تقليص حجم الشعار في الهواتف */
+    }
+
     header h1 {
-        font-size: 1.4rem;
+        font-size: 1.4rem; /* تقليص حجم العنوان */
     }
 
     header p {
-        font-size: 0.9rem;
+        font-size: 0.9rem; /* تقليص حجم النص */
     }
 
     /* Navigation */
@@ -226,12 +234,20 @@ footer {
 /* Smaller Mobile Screens */
 @media screen and (max-width: 480px) {
     /* Header */
+    header {
+        padding: 8px 0; /* تقليل المسافة العلوية والسفلية للهيدر */
+    }
+
+    header .logo img {
+        max-width: 40px; /* تقليص الشعار أكثر في الهواتف الصغيرة */
+    }
+
     header h1 {
-        font-size: 1.2rem;
+        font-size: 1.2rem; /* تقليص العنوان بشكل أكبر */
     }
 
     header p {
-        font-size: 0.8rem;
+        font-size: 0.8rem; /* تقليص حجم النص بشكل أكبر */
     }
 
     /* Navigation */
